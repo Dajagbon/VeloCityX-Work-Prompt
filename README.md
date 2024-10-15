@@ -24,7 +24,7 @@ The dataset used in this project is located at:
 
 ## Data Cleaning and Preprocessing
 
-The data cleaning and preprocessing are performed in the `2025-VeloCityX-DataCleaning.py` script. The main steps include:
+The data cleaning and preprocessing are performed in the `2025-VeloCityX-Data Cleaning.ipynb` script. The main steps include:
 
 1. **Initial Exploration**: Load the dataset and perform initial exploration to understand its structure and contents.
 2. **Remove Duplicates**: Remove duplicate rows from the dataset.
@@ -34,7 +34,7 @@ The data cleaning and preprocessing are performed in the `2025-VeloCityX-DataCle
 
 ## Analysis and Modeling
 
-The analysis and modeling steps are performed in the `2025-VeloCityX-Analysis.py` script. The main steps include:
+The analysis and modeling steps are performed in the `2025-VeloCityX-Data Analysis.ipynb` script. The main steps include:
 
 1. **Investigate Trends**: Identify which users will most likely purchase virtual merchandise and analyze user activities during race events.
 2. **Clustering**: Apply KMeans clustering to identify user segments based on their activities.
