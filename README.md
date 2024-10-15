@@ -44,9 +44,3 @@ The analysis and modeling steps are performed in the `2025-VeloCityX-Data Analys
 ## Results
 
 The results of the analysis and modeling are visualized using various plots, including scatter plots and heatmaps. Key insights about user behavior are identified and discussed.
-
-## How to Run the Project
-
-1. Ensure you have Python and the necessary libraries installed. You can install the required libraries using:
-   ```bash
-   pip install pandas seaborn matplotlib scikit-learn
