@@ -1,4 +1,3 @@
-# VeloCityX-Work-Prompt
 # 2025 VeloCityX Expanded Fan Engagement Data Analysis
 
 ## Project Overview
