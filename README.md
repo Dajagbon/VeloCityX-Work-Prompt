@@ -17,14 +17,14 @@ The dataset used in this project is located at:
 ### Columns in the Dataset
 
 - `user_id`: Unique identifier for each user.
-- `Fan Challenges Completed`: Number of fan challenges completed by the user.
-- `Virtual Merchandise Purchases`: Number of virtual merchandise items purchased by the user.
+- `Fan Challenges Completed`: Number of fan challenges the user completes.
+- `Virtual Merchandise Purchases`: Number of virtual merchandise items the user purchases.
 - `Sponsorship Interactions (Ad Clicks)`: Number of sponsorship interactions (ad clicks) by the user.
-- Additional columns may be present in the dataset.
+- Additional columns are present in the dataset.
 
 ## Data Cleaning and Preprocessing
 
-The data cleaning and preprocessing steps are performed in the `2025-VeloCityX-DataCleaning.py` script. The main steps include:
+The data cleaning and preprocessing are performed in the `2025-VeloCityX-DataCleaning.py` script. The main steps include:
 
 1. **Initial Exploration**: Load the dataset and perform initial exploration to understand its structure and contents.
 2. **Remove Duplicates**: Remove duplicate rows from the dataset.
