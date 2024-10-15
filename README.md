@@ -19,7 +19,7 @@ The dataset used in this project is located at:
 - `Fan Challenges Completed`: Number of fan challenges completed by the user.
 - `Virtual Merchandise Purchases`: Number of virtual merchandise items purchased by the user.
 - `Sponsorship Interactions (Ad Clicks)`: Number of sponsorship interactions (ad clicks) by the user.
-- Additional columns may be present in the dataset.
+- Additional columns are present in the dataset.
 
 ## Data Cleaning and Preprocessing
 
