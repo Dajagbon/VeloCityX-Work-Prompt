@@ -7,11 +7,12 @@ This project aims to clean, organize, and analyze the 2025 VeloCityX Expanded Fa
 1. Clean and preprocess the dataset.
 2. Investigate trends and identify key insights about user behavior.
 3. Apply clustering and predictive modeling techniques to gain deeper insights.
+4. Visualize the trends and correlations in the data.
 
 ## Dataset
 
 The dataset used in this project is located at:
-`C:/Users/danie/Downloads/2025-VeloCityX-Expanded-Fan-Engagement-Data-cleaned.csv`
+`C:/Users/danie/Downloads/2025-VeloCityX-Expanded-Fan-Engagement-Data-cleaned`
 
 ### Columns in the Dataset
 
@@ -19,7 +20,7 @@ The dataset used in this project is located at:
 - `Fan Challenges Completed`: Number of fan challenges completed by the user.
 - `Virtual Merchandise Purchases`: Number of virtual merchandise items purchased by the user.
 - `Sponsorship Interactions (Ad Clicks)`: Number of sponsorship interactions (ad clicks) by the user.
-- Additional columns are present in the dataset.
+- Additional columns may be present in the dataset.
 
 ## Data Cleaning and Preprocessing
 
@@ -31,21 +32,35 @@ The data cleaning and preprocessing steps are performed in the `2025-VeloCityX-D
 4. **Fix Structural Errors**: Correct any structural errors or typos in the dataset (example provided but commented out).
 5. **Normalize or Standardize Data**: Normalize or standardize numerical columns if necessary (example provided but commented out).
 
-## Analysis and Modeling
+### Excerpt from `2025-VeloCityX-DataCleaning.py`
 
-The analysis and modeling steps are performed in the `2025-VeloCityX-Analysis.py` script. The main steps include:
+```python
+import pandas as pd
 
-1. **Investigate Trends**: Identify which users are most likely to purchase virtual merchandise and analyze user activities during race events.
-2. **Clustering**: Apply KMeans clustering to identify user segments based on their activities.
-3. **Predictive Modeling**: Use a Random Forest Classifier to predict virtual merchandise purchases based on user activities.
-4. **Evaluation**: Evaluate the predictive model using classification reports and confusion matrices.
+# Load the data
+df = pd.read_csv('C:/Users/danie/Downloads/2025-VeloCityX-Expanded-Fan-Engagement-Data.csv')
 
-## Results
+# Initial exploration
+print("Initial DataFrame:")
+print(df.head())
+print(df.info())
+print(df.describe())
 
-The results of the analysis and modeling are visualized using various plots, including scatter plots and heatmaps. Key insights about user behavior are identified and discussed.
+# Store the initial state of the DataFrame
+initial_shape = df.shape
+initial_missing_values = df.isnull().sum()
 
-## How to Run the Project
+# Remove duplicates
+df.drop_duplicates(inplace=True)
 
-1. Ensure you have Python and the necessary libraries installed. You can install the required libraries using:
-   ```bash
-   pip install pandas seaborn matplotlib scikit-learn
+# Handle missing values
+df.fillna(df.mean(numeric_only=True), inplace=True)
+
+# Fix structural errors (example: correcting typos in a specific column)
+# df['column_name'].replace({'typo1': 'correct1', 'typo2': 'correct2'}, inplace=True)
+
+# Normalize or standardize data if necessary
+# Example: Standardizing numerical columns
+# from sklearn.preprocessing import StandardScaler
+# scaler = StandardScaler()
+# df[['numerical_column1', 'numerical_column2']] = scaler.fit_transform(df[['numerical_column1', 'numerical_column2']])
